@@ -56,7 +56,7 @@ namespace CompanyAddressBook.Controllers
             }
 
             _context.SaveChanges();
-            return View();
+            return RedirectToAction("Index");
         }
 
         public IActionResult Index()
